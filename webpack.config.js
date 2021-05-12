@@ -1,9 +1,7 @@
-const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const { loader } = require('mini-css-extract-plugin');
 
 const config = {
   entry: './src/index.js',
@@ -64,4 +62,3 @@ const config = {
 };
 
 module.exports = config;
-/* use: [MiniCssExtractPlugin.loader,'css-loader','sass-loader'] */
