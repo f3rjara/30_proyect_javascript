@@ -1,7 +1,9 @@
-import "./styles.scss";
-import logo from "./assets/img/github.png";
-import fondo from "./assets/img/fondo.jpg";
 
-document.querySelector('#app').innerHTML = `<img src="${logo}" alt "logo">`;
+import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './../node_modules/bootstrap/dist/js/bootstrap.bundle.min';
 
-const title = document.querySelector('.title');
+import "./main.scss";
+
+import "./assets/js/assets.js";
+
+

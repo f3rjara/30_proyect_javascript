@@ -17,8 +17,7 @@ const config = {
         exclude: /node_modules/
       },
       {
-        test: /\.scss$/,
-        
+        test: /\.(sass|scss|less|css)$/i,        
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -52,7 +51,9 @@ const config = {
         collapseWhitespace: true
       }
     }),
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin({
+      filename: '[name].bundle.css',
+    })
   ],
   optimization: {
     minimizer: [
