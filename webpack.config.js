@@ -43,10 +43,6 @@ const config = {
     new HtmlWebpackPlugin({  
       filename: 'index.html',
       template: 'src/index.html',
-      templateParameters: {
-        titulo: 'Manual de Webpack en Desarrolloweb',
-        encabezamiento: 'Aprendo Webpack en DesarrolloWeb.com',
-      },
       minify: {
         collapseWhitespace: true
       }
