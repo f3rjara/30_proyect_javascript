@@ -1,0 +1,82 @@
+.section_2 {
+  background: url('https://javascript30.com/images/topographic-pattern.png');
+  background-size: 240px;
+  min-height: 500px;
+
+  .card {
+    padding: 40px 30px;
+    border-radius: 30px;
+    border: 3px solid white;
+    text-align: center;
+    transform: translateY(-50%);
+    background: #ffffffbf;
+    h1 { 
+      font-family: 'Farro', sans-serif;
+      margin-bottom: 15px;
+    }
+    p {
+      font-family: 'Farro', sans-serif;
+      font-size: 24px;
+    }
+    .cl_yellow { 
+      color: #b50a0a;
+      font-weight: 700;
+    }
+    .separator {
+      padding-left: 10px;
+      padding-right: 10px;
+      position: relative;
+      color: transparent;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 0;
+        left: 0;
+        background: #b50a0a;
+        transform: translateX(40%) translateY(50%);
+        border-radius: 50%;
+      }
+
+    }
+ 
+ 
+ 
+  }
+
+  .contentRow {
+    p { 
+      font-family: 'Farro', sans-serif;
+      font-size: 24px;
+      .js30 {
+        color: #b50a0a;
+        font-weight: 700;
+      }
+    }
+    .btnJs30 {
+      font-family: 'Farro', sans-serif;
+      font-weight: 700;
+      padding: 15px 30px;
+      background: #b50a0a;
+      color: white;
+    }
+  }
+
+  .imageRow {
+    img {
+      width: 90%;
+      margin-left: 5%;
+      margin-top: -5%;
+      margin-bottom: 100px;
+      transform: rotate(4deg);
+      border: 20px solid #fff;
+      transition: 1s ease-in-out;
+      box-shadow: 8px 7px 12px rgba(0, 0, 0, 0.3);
+      &:hover {
+        transform: rotate(-4deg) translateY(-10px);
+        box-shadow: -8px 7px 12px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}

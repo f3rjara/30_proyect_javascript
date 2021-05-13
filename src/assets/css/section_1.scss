@@ -1,0 +1,74 @@
+
+header {
+  background-image: url('https://cdn.pixabay.com/photo/2021/05/07/17/44/sunset-6236754_960_720.jpg');
+  background-size: 100%;
+  background-position: top;
+  .hero {
+    perspective: 500px;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: "Againtsregular";
+      .hero__title {
+        font-size: 170px;
+        margin-bottom: 120px;
+        margin-top: 20px;
+        border-bottom: 0;
+        font-weight: 100;
+        letter-spacing: 2px;
+        font-family: 'againtsregular';
+        position: relative;
+        color: #fff;
+        text-shadow: 2px 2px 2px rgba(0,0, 0, 20%), 0 0 10px rgba(0,0, 0, 10%);
+        z-index: 1;
+        display: inline-block;
+        animation-name: floating;
+        animation-duration: 40s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        text-decoration: none;
+        &:hover {
+          color: #fff;
+        }
+        &::before {
+          z-index: -1;
+          content: '_';
+          position: absolute;
+          color: #000;
+          left: 0;
+          transform: translateY(-200%);
+          font-size: 4em;
+          line-height: 20px;
+        }
+        .hashtag {
+          color: #ffc600;
+          font-size: 0.5em;
+        }
+
+        .num {
+          color: #ffc600;
+          font-size: 1.5em;
+          position: relative;
+          top: 0.07em;
+        }
+      }
+    }
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px) rotateY(-12deg);
+    text-shadow: 10px 10px 3px rgba(0, 0, 0, 15%);
+  }
+  65% {
+      transform: translate(0, 15px) rotateY(10deg) rotateX(10deg);
+      text-shadow: -10px -10px 3px rgba(0, 0, 0, 15%);
+  }
+  100% {
+      transform: translate(0, 0px) rotateY(-12deg);
+      text-shadow: 10px 10px 3px rgba(0, 0, 0, 15%);
+  }
+} 
